@@ -45,18 +45,18 @@ public class PlayerController : MonoBehaviour {
 
         
         //Movement
-        if (Input.GetAxis("Horizontal") !=0 )
+        if ((Input.GetKey(GameManager.Instance.KeyCode(KeyCode.A)) ? -1 : 0) + (Input.GetKey(GameManager.Instance.KeyCode(KeyCode.D)) ? 1 : 0) != 0 )
         {
             hacking = false;
             busy = false;
-            s.x = moveSpeed * (Input.GetAxis("Horizontal"));
+            s.x = moveSpeed * ((Input.GetKey(GameManager.Instance.KeyCode(KeyCode.A))?-1:0) + (Input.GetKey(GameManager.Instance.KeyCode(KeyCode.D)) ? 1 : 0));
             if (s.x > Max_Speed)
             {
                 s.x = Max_Speed;
             }
             transform.position += s;
         }
-        if(Input.GetAxis("Vertical") > 0)
+        if((Input.GetKey(GameManager.Instance.KeyCode(KeyCode.W)) ? 1 : 0) > 0)
         {
 
             hacking = false;
