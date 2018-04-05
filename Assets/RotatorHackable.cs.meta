@@ -1,13 +1,14 @@
 fileFormatVersion: 2
-guid: 00f3d65511d879849aceba89a608301f
-timeCreated: 1521175410
+guid: c9efd917db8204443a4c88c2a922e619
+timeCreated: 1522889288
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - SliderHackPanel: {fileID: 1365483667688678, guid: 6b27c27fa728ca84c9f5f7534a591712,
+  - RotatorHackPanel: {fileID: 1724401480150614, guid: 245fa4533b8b15b43828fd9f7a74b457,
       type: 2}
+  - image: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
